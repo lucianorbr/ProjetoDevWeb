@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de usuários</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Usuários</h1>
+        <a href="index.html" class="btn-novo">Novo Usuário</a>
+        <div class="table-container">
+            <table id="userTable">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="userList">
+                    <!-- Usuários serão inseridos aqui via JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div id="mensagem"></div>
+    </div>
+
+    <!-- Modal de Edição -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <h2>Editar Usuário</h2>
+            <form id="editForm">
+                <input type="hidden" id="editId">
+                <div class="form-group">
+                    <label for="editNome">Nome:</label>
+                    <input type="text" id="editNome" required>
+                </div>
+                <div class="form-group">
+                    <label for="editEmail">E-mail:</label>
+                    <input type="email" id="editEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="editSenha">Nova Senha (deixe em branco para manter a atual):</label>
+                    <input type="password" id="editSenha">
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit">Salvar</button>
+                    <button type="button" onclick="fecharModal()">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../js/lista.js"></script>
+</body>
+</html>
