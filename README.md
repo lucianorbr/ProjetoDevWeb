@@ -14,6 +14,7 @@ Sistema simples de cadastro de usuários com armazenamento local.
 1. Clone este repositório
 2. Abra o arquivo `src/index.html` em seu navegador
 3. Comece a cadastrar usuários
+4. Ou execute direto do GitHub usando o Codespaces
 
 ## Tecnologias utilizadas
 
